@@ -25,7 +25,7 @@ public class TempControllerTest {
 //    }
 
     @GetMapping("/temp/thymeleaf")
-    public String tempJsp(){
+    public String tempThymeleaf(){
 //        풀경로: src/main/resources/templates/thymeleafTest.html
         return "thymeleafTest";
     }
