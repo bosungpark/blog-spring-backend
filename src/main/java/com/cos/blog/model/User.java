@@ -1,11 +1,20 @@
 package com.cos.blog.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.hibernate.annotations.ColumnDefault;
 import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
 import java.sql.Timestamp;
 
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 //User 클래스가 MySQL에 자동으로 생성되도록 하는 어노테이션
 //ORM: 언어로 만든 객체를 데이터베이스와 연결 시켜주는 것
 @Entity
