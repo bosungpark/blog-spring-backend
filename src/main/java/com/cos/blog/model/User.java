@@ -7,6 +7,7 @@ import javax.persistence.*;
 import java.sql.Timestamp;
 
 //User 클래스가 MySQL에 자동으로 생성되도록 하는 어노테이션
+//ORM: 언어로 만든 객체를 데이터베이스와 연결 시켜주는 것
 @Entity
 public class User {
 
@@ -27,7 +28,7 @@ public class User {
     @Column(nullable = false, length = 50)
     private String email;
 
-//    ColumnDefault는 "'기본값'"의 형식으로 작성
+//    ColumnDefault에서 문자열을 인식하기 위해서는 "'기본값'"의 형식으로 작성한다.
     @ColumnDefault("'user'")
     private String role;
 
