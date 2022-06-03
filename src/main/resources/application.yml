@@ -24,7 +24,8 @@ spring:
   jpa:
     open-in-view: true
     hibernate:
-      ddl-auto: create
+#      create 설정 시, 데이터 초기화
+      ddl-auto: update
       naming:
 #        hibernate의 테이블 생성 시, 변수명 그대로 DB 테이블에 필드를 생성
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
