@@ -32,13 +32,14 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
+
     @Column(nullable = false, length = 30)
     private String username;
 
     @Column(nullable = false, length = 100)
     private String password;
 
-    @Column(nullable = false, length = 50)
+    @Column(nullable = false, length = 50, unique = true)
     private String email;
 
 //    ColumnDefault에서 문자열을 인식하기 위해서는 "'기본값'"의 형식으로 작성한다.
