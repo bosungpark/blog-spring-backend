@@ -1,5 +1,6 @@
 <head th:replace="./layout/header.html :: nav"></head>
-
+<meta name="_csrf" th:content="${_csrf.token}">
+<meta name="_csrf_header" th:content="${_csrf.headerName}">
 <div class="container" style="margin: 100px">
     <form>
         <div class="form-group">
@@ -20,5 +21,5 @@
     <button id="btn-save" class="btn btn-primary">Join</button>
 </div>
 
-<script src="/blog/js/user.js"></script>
+<script src="/js/user.js"></script>
 <footer th:replace="./layout/footer.html :: footer"></footer>

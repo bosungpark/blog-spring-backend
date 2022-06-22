@@ -28,11 +28,11 @@ public class UserService {
         return -1;
     }
 
-    @Transactional(readOnly = true)//쿼리 시의 정합성 유지
-    public User 로그인(User user){
-
-        return userRepository.findByUsernameAndPassword(user.getUsername(), user.getPassword());
-    }
+//    @Transactional(readOnly = true)//쿼리 시의 정합성 유지
+//    public User 로그인(User user){
+//
+//        return userRepository.findByUsernameAndPassword(user.getUsername(), user.getPassword());
+//    }
 
 
 }

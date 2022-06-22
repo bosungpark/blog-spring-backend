@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 public interface UserRepository extends JpaRepository<User, Integer>{
     //jpa 네이밍 쿼리 전략
     // SELECT * FROM user WHERE username=? AND password=?;
-    User findByUsernameAndPassword(String username, String password);
+//    User findByUsernameAndPassword(String username, String password);
 
     //nativeQuery를 이용하는 방법
 //    @Query(value = "SELECT * FROM user WHERE username=?1 AND password=?2", nativeQuery = true)
